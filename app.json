@@ -5,16 +5,21 @@
 	"repository": "https://github.com/riz4d/TempMail-Bot",
 	"env": {
         "BOT_TOKEN": {
-            "description": "Your Telegram Bot Token from @BotFather",
-            "value": ""
-        }
+
+            "description": "your bot token from @BotFather",
+
+            "required": true
+
+        },
     },
     "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
+
+"buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+
+      ],
       "formation": {
           "worker": {
               "quantity": 1,
